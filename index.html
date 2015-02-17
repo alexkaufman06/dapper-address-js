@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+  <script src=https://code.jquery.com/ui/1.11.3/jquery-ui.min.js></script>
+  <script src="js/scripts.js"></script>
+  <title>Address Book!</title>
+</head>
+<body>
+    <div class="container">
+          <h2>Add a contact:</h2>
+          <form id="new-contact">
+            <div class="row">
+              <div class="col-md-3">
+
+                <div class="form-group" id="styleMe">
+                  <label class="input">
+                    <input type="text" id="new-first-name" autofocus required>
+                    <span><span>First Name</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col-md-3">
+                <div class="form-group" id="styleMe">
+                  <label  class="input">
+                    <input type="text" id="new-last-name" required>
+                    <span><span>Last Name</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class ="row">
+              <div class="col-md-3">
+
+                <div class="form-group" id="styleMe">
+                  <label  class="input" >
+                    <input type="text" id="new-street" required>
+                    <span><span>Street</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group" id="styleMe">
+                  <label  class="input" >
+                    <input type="text" id="new-city" required>
+                    <span><span>City</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group" id="styleMe">
+                  <label  class="input" >
+                    <input type="text" id="new-state" required>
+                    <span><span>State</span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group" id="styleMe">
+                  <label  class="input" >
+                    <input type="text" id="new-zip" required>
+                    <span><span>Zip</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+              <div class="row">
+                <div class="form-group" id="styleMe">
+                  <div class="span7 text-center">   <!-- Center button w/ bootstrap -->
+                    <button type="submit" class="btn">Add</button>
+                  </div>
+                </div>
+              </div>
+          </form>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="show-contact">
+                <h2></h2>
+                <p>First name: <span class="first-name"></span></p>
+                <p>Last name: <span class="last-name"></span></p>
+                <p>Address: <span class="address"></span></p>
+              </div>
+            </div>
+          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contacts:</h2>
+        <form>
+          <ul class="fa-ul" id="contact-list">
+          </ul>
+      </div>
+      <div class="col-md-6">
+        </form>
+        <h2>Favorites:</h2>
+        <ul class="fa-ul" id="favorite-list">
+        </ul>
+      </div>
+    </div>
+      </div>
+</body>
+</html>
