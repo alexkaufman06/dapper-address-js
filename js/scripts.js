@@ -84,7 +84,6 @@ $(function(){
     });
     sortL($("#contact-list"));
     sortL($("#favorite-list"));
-  });
 
     $("#add-address").click(function() {
       $("#new-addresses").append('<div class="new-address">' +
@@ -124,5 +123,11 @@ $(function(){
           '</div>' +
         '</div>');
     });
+
+
+
+  $("#new-addresses").empty();
+  });
+  $("#new-addresses").empty();
 
 });
