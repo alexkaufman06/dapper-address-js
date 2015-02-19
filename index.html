@@ -16,10 +16,9 @@
           <form id="new-contact">
             <div class="row">
               <div class="col-md-3">
-
-                <div class="form-group" id="styleMe">
+                <div class="form-group styleMe">
                   <label class="input">
-                    <input type="text" id="new-first-name" autofocus required>
+                    <input type="text" class="new-first-name" autofocus required>
                     <span><span>First Name</span></span>
                   </label>
                 </div>
@@ -27,51 +26,54 @@
             </div>
             <div class ="row">
               <div class="col-md-3">
-                <div class="form-group" id="styleMe">
+                <div class="form-group styleMe">
                   <label  class="input">
-                    <input type="text" id="new-last-name" required>
+                    <input type="text" class="new-last-name" required>
                     <span><span>Last Name</span></span>
                   </label>
                 </div>
               </div>
             </div>
-            <div class ="row">
-              <div class="col-md-3">
-
-                <div class="form-group" id="styleMe">
-                  <label  class="input" >
-                    <input type="text" id="new-street" required>
-                    <span><span>Street</span></span>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group" id="styleMe">
-                  <label  class="input" >
-                    <input type="text" id="new-city" required>
-                    <span><span>City</span></span>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group" id="styleMe">
-                  <label  class="input" >
-                    <input type="text" id="new-state" required>
-                    <span><span>State</span></span>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="form-group" id="styleMe">
-                  <label  class="input" >
-                    <input type="text" id="new-zip" required>
-                    <span><span>Zip</span></span>
-                  </label>
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class ="row">
+                  <div class="col-md-3">
+                    <div class="form-group styleMe">
+                      <label  class="input" >
+                        <input type="text" class="new-street" required>
+                        <span><span>Street</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group styleMe">
+                      <label  class="input" >
+                        <input type="text" class="new-city" required>
+                        <span><span>City</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group styleMe">
+                      <label  class="input" >
+                        <input type="text" class="new-state" required>
+                        <span><span>State</span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group styleMe">
+                      <label  class="input" >
+                        <input type="text" class="new-zip" required>
+                        <span><span>Zip</span></span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
               <div class="row">
-                <div class="form-group" id="styleMe">
+                <div class="form-group styleMe">
                   <div class="span7 text-center">   <!-- Center button w/ bootstrap -->
                     <button type="submit" class="btn">Submit</button>
                     <span class="btn" id="add-address">Additional Address</span>
@@ -85,7 +87,10 @@
                 <h2></h2>
                 <p>First name: <span class="first-name"></span></p>
                 <p>Last name: <span class="last-name"></span></p>
-                <p>Address: <span class="address"></span></p>
+                <p>Address:</p>
+                <ul id="addresses">
+
+                </ul>
               </div>
             </div>
           </div>
